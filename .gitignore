@@ -1,0 +1,29 @@
+.owner
+*.bak
+*.log
+cache/
+fingerprints/
+jobs/*/builds
+jobs/*/promotions/*/last*
+jobs/*/promotions/*/next*
+jobs/*/promotions/*/builds
+logs/
+plugins/
+tools/
+updates/
+userContent/readme.txt
+workspace/
+jobs/*/last*
+jobs/*/next*
+war/
+
+# We may or may not add this to disable Content Security Policy: https://wiki.jenkins-ci.org/display/JENKINS/Configuring+Content+Security+Policy
+init.groovy.d/disableCSP.groovy
+
+# Some of these may not be sensible
+hudson.model.UpdateCenter.xml
+nodeMonitors.xml
+identity.key.enc
+secrets/*
+secret.key
+secret.key*
