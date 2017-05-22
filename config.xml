@@ -2,6 +2,7 @@
 <hudson>
   <disabledAdministrativeMonitors>
     <string>hudson.diagnosis.ReverseProxySetupMonitor</string>
+    <string>jenkins.security.s2m.MasterKillSwitchWarning</string>
   </disabledAdministrativeMonitors>
   <version>2.19.1</version>
   <numExecutors>2</numExecutors>
