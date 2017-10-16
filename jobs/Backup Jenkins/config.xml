@@ -17,12 +17,12 @@
         <hudson.model.StringParameterDefinition>
           <name>GIT_COMMIT_MESSAGE</name>
           <description>Git commit message</description>
-          <defaultValue></defaultValue>
+          <defaultValue>Updated</defaultValue>
         </hudson.model.StringParameterDefinition>
         <hudson.model.StringParameterDefinition>
           <name>GIT_ADD_FILES</name>
           <description>New files to add to Git (comma separated list)</description>
-          <defaultValue></defaultValue>
+          <defaultValue>jobs/*/config.xml,users/*/config.xml,*.xml,plugin-list</defaultValue>
         </hudson.model.StringParameterDefinition>
         <hudson.model.StringParameterDefinition>
           <name>GIT_DELETE_FILES</name>
@@ -61,7 +61,7 @@ set +x
   </builders>
   <publishers/>
   <buildWrappers>
-    <hudson.plugins.ansicolor.AnsiColorBuildWrapper plugin="ansicolor@0.5.0">
+    <hudson.plugins.ansicolor.AnsiColorBuildWrapper plugin="ansicolor@0.5.2">
       <colorMapName>xterm</colorMapName>
     </hudson.plugins.ansicolor.AnsiColorBuildWrapper>
   </buildWrappers>
