@@ -4,7 +4,7 @@
     <string>hudson.diagnosis.ReverseProxySetupMonitor</string>
     <string>jenkins.security.s2m.MasterKillSwitchWarning</string>
   </disabledAdministrativeMonitors>
-  <version>2.19.1</version>
+  <version>2.89.3</version>
   <numExecutors>2</numExecutors>
   <mode>NORMAL</mode>
   <useSecurity>true</useSecurity>
@@ -22,13 +22,9 @@
     <permission>hudson.model.Computer.Disconnect:admin</permission>
     <permission>hudson.model.Hudson.Administer:admin</permission>
     <permission>hudson.model.Hudson.Administer:backup_user</permission>
-    <permission>hudson.model.Hudson.ConfigureUpdateCenter:admin</permission>
     <permission>hudson.model.Hudson.Read:admin</permission>
     <permission>hudson.model.Hudson.Read:backup_user</permission>
     <permission>hudson.model.Hudson.Read:readonly</permission>
-    <permission>hudson.model.Hudson.RunScripts:admin</permission>
-    <permission>hudson.model.Hudson.RunScripts:backup_user</permission>
-    <permission>hudson.model.Hudson.UploadPlugins:admin</permission>
     <permission>hudson.model.Item.Build:admin</permission>
     <permission>hudson.model.Item.Build:readonly</permission>
     <permission>hudson.model.Item.Cancel:admin</permission>
@@ -77,6 +73,10 @@
   </views>
   <primaryView>all</primaryView>
   <slaveAgentPort>-1</slaveAgentPort>
+  <disabledAgentProtocols>
+    <string>JNLP-connect</string>
+    <string>JNLP2-connect</string>
+  </disabledAgentProtocols>
   <label></label>
   <crumbIssuer class="hudson.security.csrf.DefaultCrumbIssuer">
     <excludeClientIPFromCrumb>true</excludeClientIPFromCrumb>
