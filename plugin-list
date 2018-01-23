@@ -5,6 +5,7 @@ apache-httpcomponents-client-4-api
 bouncycastle-api
 build-monitor-plugin
 clone-workspace-scm
+command-launcher
 copyartifact
 credentials
 description-setter
