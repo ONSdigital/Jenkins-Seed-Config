@@ -56,7 +56,7 @@
 set -e
 set +x
 
-rm $JENKINS_HOME/plugin-list
+cat $JENKINS_HOME/plugin-list
 
 &quot;$SCRIPTS_DIR/jenkins/jenkins_backup.sh&quot;</command>
     </hudson.tasks.Shell>
