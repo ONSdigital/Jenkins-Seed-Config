@@ -25,6 +25,7 @@
     <permission>hudson.model.Computer.Delete:admin</permission>
     <permission>hudson.model.Computer.Disconnect:admin</permission>
     <permission>hudson.model.Hudson.Administer:admin</permission>
+    <permission>hudson.model.Hudson.Administer:backup_user</permission>
     <permission>hudson.model.Hudson.Read:admin</permission>
     <permission>hudson.model.Hudson.Read:backup_user</permission>
     <permission>hudson.model.Item.Build:admin</permission>
@@ -91,9 +92,7 @@
           <default>
             <comparator class="hudson.util.CaseInsensitiveComparator"/>
           </default>
-          <int>1</int>
-          <string>JENKINS_BACKUP_PASSWORD</string>
-          <string>IC0mplete1yF0rg0t</string>
+          <int>0</int>
         </tree-map>
       </envVars>
     </hudson.slaves.EnvironmentVariablesNodeProperty>
